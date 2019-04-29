@@ -32,20 +32,19 @@ We use the [answer sentence selection dataset](https://github.com/xuchen/jacana/
 
 
 
-## Makefile
-Compile `request.cpp` under your own g++ environment
+## Steps: Run ReQuest for the task of *Relation Extraction* on the NYT dataset
+
+1. Compile `request.cpp` under your own g++ environment
 ```
 $ cd ReQuest/code/Model/request; make
 ```
 
-## Default Run & Parameters
-Run ReQuest for the task of *Relation Extraction* on the NYT dataset
-
-Start the Stanford corenlp server for the python wrapper.
+2. Start the Stanford corenlp server for the python wrapper.
 ```
 $ java -mx4g -cp "code/DataProcessor/stanford-corenlp-full-2016-10-31/*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer
 ```
 
+## Train
 Feature extraction, embedding learning on training data, and evaluation on test data.
 ```
 $ ./run_nyt.sh  
