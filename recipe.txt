@@ -1,0 +1,11 @@
+# Main file:
+ditk/extraction/relation/ReQuest/main.py
+
+# Modules:
+Process train, dev, and test data: ditk/extraction/relation/ReQuest
+
+Train Model: ditk/extraction/relation/ReQuest
+
+Predict Model: ditk/extraction/relation/ReQuest
+
+Evaluate Model: ditk/extraction/relation/ReQuest
