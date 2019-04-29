@@ -8,8 +8,23 @@ Zeqiu Wu • Xiang Ren • Frank F. Xu • Ji Li • Jiawei Han
 Proceedings of the Eleventh ACM International Conference on Web Search and Data Mining (WSDM ‘18)
 
 
+Input/s:
+Sentences, Entity1, Etype, Estart, Eend,Entity2, Relation,
+Output/s:
+Sentence,e1,e2,PredictedRelation,TrueRelation 
 
-### Input - Please put the data files in 'NYT' subdirectories under `ReQuest/data/source`
+### Input:
+
+Put the data files in 'NYT' subdirectories under `ReQuest/data/source`
+
+The common data format is as below:
+
+Sentence | Entity1 | EType | Estart | Eend | Entity2 | Relation 
+
+This will then be converted into json format as below by DataConverter.py.
+
+
+<b>OR</b> download JSON directly from below provided links
 
 1.  We [process](https://github.com/shanzhenren/StructMineDataPipeline) (using our [data pipeline](https://github.com/shanzhenren/StructMineDataPipeline)) a public RE datasets to our JSON format. We ran [Stanford NER](https://nlp.stanford.edu/software/CRF-NER.shtml) on training set to detect entity mentions, and performed distant supervision using [DBpediaSpotlight](https://github.com/dbpedia-spotlight/dbpedia-spotlight) to assign type labels:
 ([Download JSON](https://drive.google.com/drive/folders/0B--ZKWD8ahE4UktManVsY1REOUk?usp=sharing))
@@ -17,6 +32,12 @@ Proceedings of the Eleventh ACM International Conference on Web Search and Data 
 
 2.  We use the [answer sentence selection dataset](https://github.com/xuchen/jacana/tree/master/tree-edit-data/answerSelectionExperiments/data) from TREC QA as our source of indirect supervision. We ran Stanford NER to extract entity mentions on both question and answer sentences and process the dataset into JSON format containing QA-pairs.
 ([Download JSON](https://drive.google.com/file/d/0B--ZKWD8ahE4dEZTQzI1UlRUeGc/view?usp=sharing))
+
+### Output:
+
+The common predicted output format is as below:
+
+Sentence | Entity1 | Entity2 | PredictedRelation | TrueRelation
 
 
 ### Steps:
