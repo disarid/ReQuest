@@ -66,4 +66,3 @@ Method | Precision | Recall | F1
 -------|-----------|--------|----
 CoType-RM ([Ren et al., 2017](https://arxiv.org/pdf/1610.08763v1.pdf)) | 0.342 | 0.339 | 0.340
 ReQuest ([Wu et al., 2018](https://arxiv.org/abs/1710.11169)) | 0.386 | 0.410 | **0.397**
-
