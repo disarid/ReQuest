@@ -2,23 +2,6 @@
 
 Source code and data for WSDM'18 paper *[Indirect Supervision for Relation Extraction Using Question-Answer Pairs](https://arxiv.org/abs/1710.11169)*. 
 
-## Performance
-Performance comparison with several *relation extraction* systems (**sentence-level extraction**). 
-
-Method | Precision | Recall | F1 
--------|-----------|--------|----
-CoType-RM ([Ren et al., 2017](https://arxiv.org/pdf/1610.08763v1.pdf)) | 0.342 | 0.339 | 0.340
-ReQuest ([Wu et al., 2018](https://arxiv.org/abs/1710.11169)) | 0.386 | 0.410 | **0.397**
-
-## Dependencies
-
-We will take Ubuntu for example.
-
-* python 2.7
-* Python library dependencies
-```
-$ pip install pexpect ujson tqdm
-```
 
 * Put the below library under `ReQuest/code/DataProcessor/'.
 [stanford coreNLP 3.7.0](http://stanfordnlp.github.io/CoreNLP/) and its [python wrapper](https://github.com/stanfordnlp/stanza). 
@@ -75,3 +58,13 @@ Evaluates relation extraction performance (precision, recall, F1): produce predi
 $ python code/Evaluation/emb_test.py extract NYT request cosine 0.0
 $ python code/Evaluation/tune_threshold.py extract NYT emb request cosine
 ```
+
+
+## Performance
+Performance comparison with several *relation extraction* systems (**sentence-level extraction**). 
+
+Method | Precision | Recall | F1 
+-------|-----------|--------|----
+CoType-RM ([Ren et al., 2017](https://arxiv.org/pdf/1610.08763v1.pdf)) | 0.342 | 0.339 | 0.340
+ReQuest ([Wu et al., 2018](https://arxiv.org/abs/1710.11169)) | 0.386 | 0.410 | **0.397**
+
