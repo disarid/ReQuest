@@ -20,6 +20,7 @@ Put the data files in 'NYT' subdirectories under `ReQuest/data/source`
 The common data format is as below:
 
 Sentence | Entity1 | EType | Estart | Eend | Entity2 | Relation 
+-------|-----------|--------|----
 
 This will then be converted into json format as below by DataConverter.py.
 
@@ -38,6 +39,7 @@ This will then be converted into json format as below by DataConverter.py.
 The common predicted output format is as below:
 
 Sentence | Entity1 | Entity2 | PredictedRelation | TrueRelation
+-------|-----------|--------|----
 
 
 ### Steps:
