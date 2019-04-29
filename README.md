@@ -8,10 +8,8 @@ Zeqiu Wu • Xiang Ren • Frank F. Xu • Ji Li • Jiawei Han
 Proceedings of the Eleventh ACM International Conference on Web Search and Data Mining (WSDM ‘18)
 
 
-Input/s:
-Sentences, Entity1, Etype, Estart, Eend,Entity2, Relation,
-Output/s:
-Sentence,e1,e2,PredictedRelation,TrueRelation 
+### Approach
+![DITK architecture](Architecture.png)
 
 ### Input:
 
@@ -118,5 +116,5 @@ SemEval2010 | 0.412 | 0.445 | **0.428**
 ### Jupyter Notebook demo:
 
 
-### Video:
+### Demo Video:
 
