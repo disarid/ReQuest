@@ -9,7 +9,12 @@ Proceedings of the Eleventh ACM International Conference on Web Search and Data 
 
 
 ### Approach
+
+Embedding-based framework with indirect supervision.
+ReQuest uses embeddings to estimate the types of test relation mentions. 
+
 ![DITK architecture](Architecture.png)
+
 
 ### Input:
 
